@@ -11,6 +11,7 @@ const NavBar = () => {
                         <li key={label}>
                             <a href={label}>{label}</a>
                         </li>
+                        
                 ))}
             </ul>
 
