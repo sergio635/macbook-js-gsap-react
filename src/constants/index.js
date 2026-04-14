@@ -10,3 +10,5 @@ const navlinks = [
     {label: 'Accessories'},
     {label: 'Support'},
 ]
+
+export { navlinks }
