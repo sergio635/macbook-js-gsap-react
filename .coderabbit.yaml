@@ -8,8 +8,7 @@ reviews:
   auto_review:
     enabled: true
     drafts: false
-
-path_filters:
-  - "!node_modules/**"
-  - "!dist/**"
-  - "!coverage/**"
+  path_filters:
+    - "!node_modules/**"
+    - "!dist/**"
+    - "!coverage/**"

@@ -16,34 +16,48 @@ const ProductViewer = () => {
           MacBook {scale} in {color}
         </p>
         <div className='color-control'>
-          <div
+          
+        <button
+            type="button"
             onClick={() => setColor('#adb5db')}
+            aria-pressed={color === '#adb5db'}
             className={`bg-neutral-300 ${color === '#adb5db' ? 'active' : ''}`}
           />
-          <div
+          <button
+            type="button"
             onClick={() => setColor('#123123')}
+            aria-pressed={color === '#123123'}
             style={{ backgroundColor: '#123123' }}
             className={`${color === '#123123' ? 'active' : ''}`}
           />
         </div>
 
-        <div className='size-control'>
-          <div
+        <div role='radiogroup' aria-label='MacBook size' className='size-control'>
+          <button
+            type='button'
+            role='radio'
+            aria-checked={scale === 0.06}
             onClick={() => setScale(0.06)}
             className={
               scale === 0.06 ? 'bg-white text-black' : 'bg-transparent text-white'
             }
           >
+            
             <p>14"</p>
-          </div>
-          <div
+          </button>
+          <button
+          type='button'
+          role='radio'
+          aria-checked={scale === 0.08}
             onClick={() => setScale(0.08)}
             className={
               scale === 0.08 ? 'bg-white text-black' : 'bg-transparent text-white'
             }
           >
             <p>16"</p>
-          </div>
+          </button>
+
+
         </div>
       </div>
 
