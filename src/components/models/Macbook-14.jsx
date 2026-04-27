@@ -64,3 +64,4 @@ useEffect(() => {
 
 
 useGLTF.preload('/models/macbook-14-transformed.glb')
+useTexture.preload('/screen.png')
