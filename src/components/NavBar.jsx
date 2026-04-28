@@ -7,9 +7,9 @@ const NavBar = () => {
         <nav>
             <img src="/logo.svg" alt="Apple logo" />
             <ul>
-                {navLinks.map(({label}) => (
+                {navLinks.map(({label, href}) => (
                         <li key={label}>
-                            <a href={label}>{label}</a>
+                            <a href={href}>{label}</a>
                         </li>
                         
                 ))}
