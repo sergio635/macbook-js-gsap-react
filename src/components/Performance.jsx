@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { performanceImages, performanceImgPositions } from '../constants'
 import { useMediaQuery } from 'react-responsive'
 
-gsap.registerPlugin(useGSAP, ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger)
 
 const Performance = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 1024px)' })
