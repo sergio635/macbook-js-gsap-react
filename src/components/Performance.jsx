@@ -111,7 +111,7 @@ const Performance = () => {
 
         </div>
         <div className='content'>
-          <p style={{ opacity: 0, transform: 'translateY(30px)' }}>Run graphics-intensive workflows with a responsiveness that keeps up with your imagination. The M4 family of chips features a GPU with a second-generation hardware-accelerated ray tracing engine that render images faster, so gaming feels more immersive and realistic than ever before.</p>
+          <p style={{ opacity: 0 }}>Run graphics-intensive workflows with a responsiveness that keeps up with your imagination. The M4 family of chips features a GPU with a second-generation hardware-accelerated ray tracing engine that render images faster, so gaming feels more immersive and realistic than ever before.</p>
         </div>
         
     </section>

@@ -225,10 +225,10 @@ body {
     }
 
     .wrapper {
-      @apply w-7xl 2xl:w-400 h-[50vh] lg:h-screen relative;
+      @apply w-7xl 2xl:w-400 min-h-[75vh] lg:min-h-screen relative z-0 overflow-visible;
 
       img {
-        @apply max-w-40 lg:max-w-108 2xl:max-w-140 object-cover object-center;
+        @apply max-w-full lg:max-w-108 2xl:max-w-140 object-cover object-center;
       }
 
       .p1 {
@@ -261,7 +261,7 @@ body {
     }
 
     .content {
-      @apply mx-auto max-w-xl mt-24;
+      @apply mx-auto max-w-xl mt-32 lg:mt-40 relative z-10;
 
       p {
         @apply lg:h3-semibold base-semibold text-center translate-y-10 opacity-0 px-5;
