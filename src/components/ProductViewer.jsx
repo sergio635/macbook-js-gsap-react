@@ -16,19 +16,18 @@ const ProductViewer = () => {
           MacBook {scale} in {color}
         </p>
         <div className='color-control'>
-          
-        <button
+          <button
             type="button"
             onClick={() => setColor('#adb5db')}
             aria-pressed={color === '#adb5db'}
-            className={`bg-neutral-300 ${color === '#adb5db' ? 'active' : ''}`}
+            className={`size-7 rounded-full cursor-pointer bg-neutral-300 transition-all duration-300 ${color === '#adb5db' ? 'active ring-5 ring-light-100' : ''}`}
           />
           <button
             type="button"
             onClick={() => setColor('#123123')}
             aria-pressed={color === '#123123'}
             style={{ backgroundColor: '#123123' }}
-            className={`${color === '#123123' ? 'active' : ''}`}
+            className={`size-7 rounded-full cursor-pointer transition-all duration-300 ${color === '#123123' ? 'active ring-5 ring-light-100' : ''}`}
           />
         </div>
 
@@ -38,26 +37,23 @@ const ProductViewer = () => {
             role='radio'
             aria-checked={scale === 0.06}
             onClick={() => setScale(0.06)}
-            className={
-              scale === 0.06 ? 'bg-white text-black' : 'bg-transparent text-white'
-            }
+            className={`size-8 rounded-full cursor-pointer flex-center text-xs font-semibold transition-all duration-300 ${
+              scale === 0.06 ? 'bg-white text-black' : 'bg-transparent text-white border border-white/30'
+            }`}
           >
-            
-            <p>14"</p>
+            14"
           </button>
           <button
-          type='button'
-          role='radio'
-          aria-checked={scale === 0.08}
+            type='button'
+            role='radio'
+            aria-checked={scale === 0.08}
             onClick={() => setScale(0.08)}
-            className={
-              scale === 0.08 ? 'bg-white text-black' : 'bg-transparent text-white'
-            }
+            className={`size-8 rounded-full cursor-pointer flex-center text-xs font-semibold transition-all duration-300 ${
+              scale === 0.08 ? 'bg-white text-black' : 'bg-transparent text-white border border-white/30'
+            }`}
           >
-            <p>16"</p>
+            16"
           </button>
-
-
         </div>
       </div>
 
